@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Business License </title>
+  <style>
+
+    /* Style the search box inside the navigation bar */
+    .header input[type=text] {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 0px;
+  border: none;
+  font-size: 17px;
+  background-color: white;
+  color: white;
+
+}
+.header button[type=submit]{
+  float: right;
+
+  padding: 16px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+    /* Style for tabs */
+    .tab {
+
+      float:right;
+      background-color: #333;
+      border-radius: 10px;
+
+     
+    }
+
+    /* Style for tab buttons */
+    .tab button {
+      background-color: inherit;
+      float: right-bottom;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 34px;
+      transition: 0.3s;
+      color: white;
+      font-size: 17px;
+      border-radius: 10px;
+
+
+    }
+
+    /* Change background color of buttons on hover */
+    
+    /* Style for active tab button */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style for tab content */
+   
+
+    /* Modern website layout */
+    .header {
+      background-color:pink;
+      padding: 3px;
+      text-align: center;
+      font-family:Castellar;
+      height: 160px;
+
+    }
+
+    .logo {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .section {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      padding: 50px 40px;
+      transition: 0.3s;
+      color: white;
+      font-size: 17px;
+    }
+
+    .overlay{
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 800px;
+      height: 100px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .overlay p {
+      color:white;
+      font-size: 24px;
+      text-align: center;
+    }
+
+
+
+    /* Animation for moving pictures */
+    .moving-picture {
+      width: 100%;
+      height: auto;
+      animation: movePicture 10s infinite;
+       border-radius: 10px;
+    }
+
+    @keyframes movePicture {
+      0% { transform: translateX(0%); }
+      50% { transform: translateX(50%); }
+      100% { transform: translateX(0%); }
+    }
+    nav{float: left;
+
+      }
+    .slideshow-container {max-width: 500px;
+       border: 10px;
+    position: relative;
+    margin: auto;}
+    .mySlides {display: none;}
+    .padding {width: 100px;height: 100px}
+    .active {background-color:white;} }
+    .moving-image{width: 100px;height:100px;}
+
+    
+    .container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.image-link {
+  display: inline-block;
+  border: 8px solid pink;
+  padding: 5px;
+  border-radius: 10px;
+  float: right;
+  text-align: center;
+  font-family: Arial Rounded MT Bold, sans-serif;
+  
+
+}
+.image-link img{
+  height: 150px;
+  width: 150px;
+  display: block;
+  float: left;
+
+
+}
+.image-link:hover {
+  border-color: grey;
+}
+    
+  .news-content{
+    display: flex;
+    flex-wrap: wrap;
+    border-color: pink;
+    border-radius: 10px;
+  }
+  .news-item{
+    width: 751px;
+    height: 40px;
+    margin: 0;
+    padding: 20px;
+    background-color: pink;
+    border:4px solid Black;
+    border-radius: 10px;
+    color: bold Black;
+  }
+  .news-item h2{
+      margin-top:0;
+      color: red;
+      line-height: 0;
+
+    }
+    .news-item p{
+      font-size: 14px;
+      line-height: 1.0;
+      margin-bottom: 10px;
+    }
+
+  .read-more {
+    display: block;
+    text-align: right1
+    color: red;
+    text-decoration: none;
+
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+
+  .marquee{
+    display: inline-block;
+  }
+
+  #demo{
+    font-size: 18px;
+    color: #333;
+    font-family: arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+.header img{
+  float: left;
+}
+
+
+
+
+
+      </style>
+
+</head>
+
+
+
+<body>
+
+<div class="header">
+
+  <!-- Logo -->
+      <div class="heading-container">
+    
+          <img src="logom.png" alt="Logo" width="600">
+
+         <br><br><br><br><br><br>
+
+    </div>
+
+
+  <!-- Tab navigation -->
+    <div class="tab">
+      <a href="home.html"><button class="tablink" onclick="openPage('HOME', this, 'red')">Home</button></a>
+      <a href="Services.html"><button class="tablink" onclick="openPage('LOGIN', this, 'red')">Services</button></a>
+      <a href="Organization.html"><button class="tablink" onclick="openPage('ABOUT', this, 'red')">Organization</button></a>
+      <a href="Contacts.html"><button class="tablink" onclick="openPage('CONTACT', this, 'red')">Contacts</button></a>
+      <a href="Contacts.html"><button class="tablink" onclick="openPage('CONTACT', this, 'red')">Contacts</button></a>
+
+    </div>
+</div>
+
+
+
+        <marquee direction="left" behavior="scroll" loop="infinite" color="red">
+          
+           ...GET YOUR BUSINESS LICENSE WITH OUR OFFISIAL WESITE...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR BUSINESS LICENSE WITH OUR OFFISIAL WESITE...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR BUSINESS LICENSE WITH OUR OFFISIAL WESITE
+          
+        </marquee>
+
+
+<nav class="slideshow-container">
+    <!-- Slide 1 -->
+      <div class="mySlides">
+         <div class="overlay">
+            <p>DR.HUSEEIN MWINYI AKIFUNGUA OFISI YA LESENI ZA BIASHARA</p>
+         </div>
+
+        <img class="slide-image" src="A.jpg" width="800px" height="380px">
+     
+      </div>
+
+
+
+      <div class="mySlides">
+         <div class="overlay">
+            <p>DR.IDDI AKIFANYA MABORESHO YA CHUO CHA BIASHARA</p>
+         </div>
+
+        <img class="slide-image" src="D.jpg" width="800px" height="380px">
+      </div>
+
+    
+    <!-- Slide 2 -->
+      <div class="mySlides">
+         <div class="overlay">
+            <p>DR.IDDI AKIFANYA MABORESHO YA CHUO CHA BIASHARA</p>
+         </div>
+                <img class="slide-image" src="C.jpg" width="800px" height="380px">
+      </div>
+
+    
+    <!-- Slide 3 -->
+      <div class="mySlides">
+         <div class="overlay">
+            <p>DR.HUSEEIN MWINYI AKIFUNGUA OFISI YA LESENI ZA BIASHARA</p>
+         </div>
+
+        <img class="slide-image" src="A.jpg" width="800px" height="380px">
+     
+      </div>
+
+
+    <div class="mySlides">
+         <div class="overlay">
+            <p>DR.IDDI AKIFANYA MABORESHO YA CHUO CHA BIASHARA</p>
+         </div>
+
+        <img class="slide-image" src="D.jpg" width="800px" height="380px">
+      </div>
+
+
+    
+</nav>
+
+
+
+    <a href="link_destination.html" class="image-link" >
+       <img src="LOGO1.PNG" alt="description of image" >
+         <p>RETAIL<BR>LICENSE</p>
+    </a>
+
+
+    <a href="link_destination.html" class="image-link" >
+       <img src="LOGO2.PNG" alt="description of image" >
+         <p>PROFESSIONAL<BR> LICENSE</p>
+    </a>
+
+
+    <a href="link_destination.html" class="image-link" >
+       <img src="LOGO3.PNG" alt="description of image" >
+         <p>GENERAL BUSINES<BR>LICENSE</p>
+    </a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+
+
+    <a href="link_destination.html" class="image-link" >
+       <img src="LOGO4.PNG" alt="description of image" >
+         <p>FOOD SERVICE<BR>LICENSE</p>
+    </a>
+
+
+    <a href="link_destination.html" class="image-link" >
+       <img src="LOGO5.PNG" alt="description of image" >
+         <p>HEALTH AND<BR>SAFETY LICENSE</p>
+    </a>
+
+
+    <a href="link_destination.html" class="image-link" >
+       <img src="LOGO6.PNG" alt="description of image" >
+         <p>ENVIRONMENTAL<BR>LICENSE</p>
+    </a>
+
+
+            <br><br><br><br><br><br><br><br>
+
+
+
+<div class="news-container">
+
+      <div class="news-item">
+          <h2>Updates</h2>
+            <p>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+          <a href="business_updates" class="read-more">Read more</a>
+      </div><br>
+
+
+      <div class="news-item">
+        <h2>Updates</h2>
+          <p>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+        <a href="business_updates" class="read-more">Read more</a>  
+      </div><br>
+
+
+      <div class="news-item">
+          <h2>Updates</h2>
+            <p>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+          <a href="business_updates" class="read-more">Read more</a>  
+      </div><br>
+
+
+      <div class="news-item">
+          <h2>Updates</h2>
+            <p>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+          <a href="business_updates" class="read-more">Read more</a>
+      </div>  
+<div>
+
+
+
+
+
+<script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+
+      // Hide all slides
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      }
+
+      // Show current slide
+      slideIndex++;
+      if (slideIndex > slides.length) {
+      slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+
+      // Change slide every 3 seconds (3000 milliseconds)
+      setTimeout(showSlides, 3000);
+      }
+</script>
+
+
+
+<script>
+    // Function to open a specific tab
+    function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+
+    // Hide all tab content
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+    // Remove 'active' class from all tab buttons
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the selected tab content and set the corresponding button as active
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Open the default tab (Home) when the page loads
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+
+</body>
+</html>
